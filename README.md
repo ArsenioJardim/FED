@@ -58,7 +58,7 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/FED_schets.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -80,6 +80,11 @@ hier de naam van de pagina
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Op een desktop begint de vormgeving wel een beetje op die van het Jeugdjournaal te lijken
+<img src="images/website_screenshot1.jpg" width="375px"
+
+Helaas lukt het mij nog niet echt om de website responsive te maken voor een mobiele one-pager. Het werken met units vind ik over het algemeen enorm lastig en flexbox moet ik ook nog zien uit te vogelen.
+<img src="images/code_screenshot1.jpg" width="375px"
 
 ### Agenda voor meeting
 samen met je groepje opstellen
