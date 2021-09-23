@@ -99,8 +99,8 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- Als ik mijn website responsive wil maken, moet ik responsive units gebruiken zoals vw in plaats van em.
+- Ik moet alvast beginnen met het toevoegen van content
 - nog een punt
 - ...
 
@@ -116,7 +116,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Met website is nu eindelijk responsive, verder is het mij ook gelukt om wat content toe te voegen en om een hamburgermenu toe te voegen. De opmaak van de CSS en het maken van een tweede page gaat wel een beetje lastig worden denk ik.
 
 
 ### Agenda voor meeting
