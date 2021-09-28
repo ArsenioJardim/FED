@@ -132,8 +132,8 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- ul li verwijderen voor artikelen
+- article ipv section gebruiken, h1 ipv figcaption
 - nog een punt
 - ...
 
