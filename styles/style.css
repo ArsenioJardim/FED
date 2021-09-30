@@ -197,6 +197,12 @@ section article button:hover {
   transition: 0.2s;
 }
 
+section article button:focus {
+  transform: scale(0.9);
+  color: rgb(112, 112, 112);
+  text-shadow: 2px 2px 2px rgb(255, 0, 0);
+}
+
 section article button.favoriet {
   color: red;
   animation-name: favoriet-animation;
@@ -247,6 +253,11 @@ section article:hover{
   transform:scale(1.02);
   transition: 0.3s;
   box-shadow: 1px 1px 5px;
+}
+
+section article a:focus{
+  transform: scale(0.95);
+  border: 2px solid yellow;
 }
 
 section:nth-of-type(1) img {

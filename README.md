@@ -116,7 +116,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-Met website is nu eindelijk responsive, verder is het mij ook gelukt om wat content toe te voegen en om een hamburgermenu toe te voegen. De opmaak van de CSS en het maken van een tweede page gaat wel een beetje lastig worden denk ik.
+Mijn website is nu eindelijk responsive, verder is het mij ook gelukt om wat content een hamburgermenu toe te voegen. De opmaak van de CSS en het maken van een tweede page gaat wel een beetje lastig worden denk ik.
 
 
 ### Agenda voor meeting
@@ -186,7 +186,7 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het maken van de tweede pagina ging makkelijker dan ik had gedacht. De website is responsive, maar ik hem nog toegankelijker maken voor toetsenboorden en screenreaders. de fontsize werkt ook niet altijd mee met bepaalde schermgroottes.
 
 
 ### Agenda voor meeting
@@ -198,6 +198,8 @@ samen met je groepje opstellen
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
+
+Ik wil zelf focus states bespreken, wanneer ik voor een tweede keer op een knop druk blijft hij vastzitten in de focus state totdat ik op iets anders klik.
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
