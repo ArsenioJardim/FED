@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+:root {
+  --achtergrond: rgb(243, 243, 243);
+  --poll-groen: #58c53d;
+  --tekst-kleur: #444;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,17 +28,16 @@ header{
   z-index:2
 }
 
-nav:nth-of-type(1){
+nav:nth-of-type(1){ /*de logo, de zapp knop en de search knop*/
   width: 100vw;
   display: flex;  
   align-items: center;
   padding: 1vw;
   margin-left: 20vw;
   margin-right: 20vw;
-  /* border: solid 2px black; */
 }
 
-.logo {
+.logo { /*"duh"*/
   cursor: pointer;
   width: 45vw;
   justify-self: center;
@@ -57,19 +62,20 @@ nav button:nth-of-type(1) {
 }
 
 nav button:nth-of-type(1):hover {
-  transform:scale(1.07);
+  transform:scale(0.9);
   transition: 0.3s;
+  background-color: rgb(138, 6, 17);
 }
 
 nav button:nth-of-type(1):focus {
-  transform:scale(1.07);
+  transform:scale(0.9);
   transition: 0.3s;
   background-color: rgb(235, 45, 45);
   color: black;
 }
 
 nav button:nth-of-type(1).feedback {
-  transform: rotate(90deg);
+  transform: rotate(90deg) scale(0.9);
   background-color: rgb(138, 6, 17);
   transition: 0.5s;
 }
@@ -77,18 +83,33 @@ nav button:nth-of-type(1).feedback {
 nav button:nth-of-type(2) img { /*zapp knop*/
   cursor: pointer;
   width: 4em;
-  /* border: 2px dotted; */
+  border: none;
 
 }
 
 nav button:nth-of-type(3) {/*search button*/
   background-color: rgb(9, 157, 255);
+  text-decoration: none;
   border: none;
   padding: 2vw;
   cursor: pointer;
   margin: 10px;
   font-size: 2em;
   color: white;
+}
+
+nav button:nth-of-type(3):hover {
+  transform:scale(0.9);
+  transition: 0.3s;
+  background-color: rgb(6, 122, 199);
+  color: black;
+}
+
+nav button:nth-of-type(3):focus {
+  transform:scale(0.9);
+  transition: 0.3s;
+  background-color: rgb(6, 122, 199);
+  color: black;
 }
 
 header nav ul { /*nav menu*/
@@ -106,7 +127,7 @@ header nav ul { /*nav menu*/
   transition: 0.5s;
 }
 
-nav ul.toonMenu {
+nav ul.toonMenu { /*heb ik geleerd van de codepen opdrachten*/
   transform: translateX(0);
   transition: 0.6s;
   left: 0;
@@ -122,8 +143,6 @@ nav ul li{
 
 /* de a-elementen in de nav menu*/
 nav:nth-of-type(2) a {
-  display:flex;
-  align-items:center;
   gap:.25em;
   padding:.25em 1em;
   border-top:solid 1px rgb(141, 141, 141);
@@ -134,39 +153,68 @@ nav:nth-of-type(2) a {
   font-weight: bold;
 }
 
-/* de kleur van de menu-items*/
+/* de kleuren van de menu-items*/
 
 nav li:nth-of-type(1) a {
   color:rgb(83, 83, 255);
+}
+
+nav li:nth-of-type(1) a:hover {
+  background-color:rgb(83, 83, 255);
+  color: white;
 }
 
 nav li:nth-of-type(2) a { 
   color:rgb(10, 172, 10);
 }
 
+nav li:nth-of-type(2) a:hover { 
+  background-color:rgb(10, 172, 10);
+  color: white;
+}
+
 nav li:nth-of-type(3) a { 
   color:rgb(218, 138, 20);
+}
+
+nav li:nth-of-type(3) a:hover { 
+  background-color:rgb(218, 138, 20);
+  color: white;
 }
 
 nav li:nth-of-type(4) a { 
   color:rgb(172, 10, 10);
 }
 
+nav li:nth-of-type(4) a:hover { 
+  background-color:rgb(172, 10, 10);
+  color: white;
+}
+
 nav li:nth-of-type(5) a { 
   color:rgb(241, 67, 169);
+}
+
+nav li:nth-of-type(5) a:hover { 
+  background-color:rgb(241, 67, 169);
+  color:white;
 }
 
 nav li:nth-of-type(6) a { 
   color:rgb(94, 4, 155);
 }
 
+nav li:nth-of-type(6) a:hover { 
+  background-color:rgb(94, 4, 155);
+  color: white;
+}
 
 
+/*hier komen de artikelen*/
 
 section {
   display:flex;
   justify-content: center;
-  /* border: solid 2px rgb(243, 16, 224); */
   margin-left: 10vw;
   margin-right: 10vw;
   flex-wrap: wrap;
@@ -199,8 +247,8 @@ section article button:hover {
 
 section article button:focus {
   transform: scale(0.9);
-  color: rgb(112, 112, 112);
-  text-shadow: 2px 2px 2px rgb(255, 0, 0);
+  color: rgb(166, 142, 255);
+  text-shadow: 2px 2px 2px var(--achtergrond);
 }
 
 section article button.favoriet {
@@ -210,7 +258,7 @@ section article button.favoriet {
   animation-iteration-count: 1;
 }
 
-@keyframes favoriet-animation {
+@keyframes favoriet-animation { /*animatie voor hartje*/
      0% {
     transform: scale(1);
   }
@@ -231,7 +279,7 @@ section article button.favoriet {
   }
 }
 
-section article h1 {
+section article h1 { /*titels voor de artikelen*/
   text-shadow: 4px 2px 2px black;
   left: 3vh;
   bottom: 3vh;
@@ -244,9 +292,12 @@ section article h1 {
   cursor: pointer;
 }
 
-section article {
-  padding: 0;
-  margin: 0;
+section article { /*artikelen*/
+  overflow: hidden;
+  max-width: 30em;
+  max-height: 20em;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
 }
 
 section article:hover{
@@ -255,52 +306,54 @@ section article:hover{
   box-shadow: 1px 1px 5px;
 }
 
-section article a:focus{
-  transform: scale(0.95);
-  border: 2px solid yellow;
+section article a:focus img{
+  transform:scale(0.99);
+  transition: 0.3s;
+  box-shadow: 1px 1px 5px;
+  border:red 4px solid;
 }
 
-section:nth-of-type(1) img {
+section:nth-of-type(1) img { /*alleen de bovenste 2 artikelen*/
   width: 30em;
   height: 20em;
-  margin: 0.5em;
+  margin: 0em;
 }
 
-@media (max-width:800px ) {
+@media (max-width:800px ) { /*media query om het zo responsive mogelijk te maken, achteraf gezien was max/min-width misschien beter geweest.*/
   section:nth-of-type(1) img{
     width: 70vw;
     height: 40vw;
-    margin: 0.5em;
   }
 } 
 
-section:nth-of-type(2) img  {
+section:nth-of-type(2) img  { /*de rest vam de artikelen*/
   width: 20vw;
   height: 15em;
-  margin: 0.5em;
-  margin-top: 0.5em;
 }
 
 @media (max-width:1000px ) {
   section:nth-of-type(2) img{
     width: 70vw;
     height: 40vw;
-    margin: 0.5em;
   }
 } 
 
 /* hier begint de tweede pagina*/
 
+main {
+  background-color: var(--achtergrond);
+}
+
 main article {
-font-family: Arial, Helvetica, sans-serif;
-background-color: rgb(243, 243, 243);
-padding-left: 10vw;
-padding-right: 10vw;
-padding-bottom: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--achtergrond);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vw;
 
 }
 
-main article img {
+main article img { /*de afbeeldingen van het artikel*/
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -322,26 +375,194 @@ main article p {
   max-width: 40rem;
   font-size: 1.2em;
   line-height: 1.5em;
-  color: #444;
+  color: var(--tekst-kleur);
   margin-bottom: 1em;
 }
 
-main article p:nth-of-type(2) {
+main article p:nth-of-type(2) { /*de tussenkop "drugs"*/
   font-weight: bold;
   color: black;
 }
 
-main article p:nth-of-type(5) {
-  font-weight: bold;
-  color: black;
+main article blockquote { /*de quote van het artikel*/
+  max-width: 40rem;
+  margin: auto;
+  background-color: rgb(195, 219, 219);
+  border: 2px dotted grey;
+  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 2em;
 }
 
-main article p:nth-of-type(6) {
+main article blockquote p:nth-of-type(1) { 
   font-style: italic;
   color: black;
 }
 
-footer {
+main article blockquote p:nth-of-type(2) {
+  font-style: italic;
+  color: var(--tekst-kleur);
+  font-size: 1em;
+}
+
+form { /*de groene box*/
+  text-align: center;
+  background-color: var(--poll-groen);
+  height: 80vw;
+  max-height: 25em;
+  width: 100%;
+  max-width: 50em;
+  margin: auto;
+  margin-bottom: 5vw;
+  margin-top: 1em;
+  padding-top: 5em;
+  color: var(--achtergrond);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form h2 { /*de stelling*/
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 15vh;
+  height: 25px;
+  width: 25px;
+  background-color: var(--poll-groen);
+  border: 4px solid var(--achtergrond);
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: rgb(20, 71, 100);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--poll-groen);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+ 	top: 2.5px;
+	left: 2.5px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: white;
+}
+
+form button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  border: none;
+  font-size: 2em;
+  color: var(--poll-groen);
+  background-color: var(--achtergrond);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(203, 230, 253);
+  transform: scale(0.9);
+}
+
+main h2 { /*"laatste nieuws*/
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.laatstenieuws { /*andere nieuwsartikelen*/
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  max-width: 80em;
+  margin: auto;
+}
+
+.laatstenieuws article {
+  list-style: none;
+  width: 45%;
+  max-width: 20em ;
+  height: 30em;
+  max-height: 20vh;
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 8px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  /* border: solid red; */
+  overflow: hidden;
+}
+
+.laatstenieuws article:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 5px;
+
+}
+
+.laatstenieuws article img  {
+  width: 20em;
+  height: 11em;
+}
+
+.laatstenieuws article h1 {
+  text-shadow: 4px 2px 2px black;
+  left: 3vw;
+  bottom: 1vh;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding:0;
+  cursor: pointer;
+}
+
+.laatstenieuws article button { /* hartje */
+  position: absolute;
+  color: grey;
+  border:none;
+  background: none;
+  font-size: 8vh;
+  top: 0.01vh;
+  right:3vw;
+  text-shadow: 2px 2px 2px black;
+}
+
+footer { /*"de footer met de logo van NOS Jeugdjournaal*/
   text-align: center;
   padding: 5rem 0 7rem;
 }

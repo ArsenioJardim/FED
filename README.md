@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Arsenio Jardim (vervangen door jouw naam)
+Arsenio Jardim
 
 #### Je startniveau:
-blauw (kies uit zwart, rood óf blauw)
+blauw
 
 #### Je focus:
-surface plane (kies uit responsive óf surface plane)
+responsive plane (misschien allebei)
  
 </details>
 
@@ -151,28 +151,50 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### De screenreader
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+<img src="images/website_test1.jpg" width="375px"
+-	buttons zijn niet duidelijk genoeg
+-	de titels van de artikelen worden niet voorgelezen
+-	de foto's en buttons kunnen niet van elkaar worden onderscheiden
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Hoe dit opgelost kan worden: (met indien nodig een afbeelding)
+-	img alt gebruiken
+-	articles binnen een "a" element te zetten zodat de screenreader hem kan lezen
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### De ballon 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+<img src="images/website_test3.jpg" width="375px"
+-	het is te moeilijk om de muis te bedienen en tegelijkertijd een ballon omhoog te houden
+-	het is lastig om op bepaalde links/knoppen te drukken
+
+Hoe dit opgelost kan worden: (met indien nodig een afbeelding)
+-	grote knoppen
+-	velle/opvallende kleuren gebruiken
+
+
+#### Elektrische Stimulator. 
+
+Ik deed een stimulator om mijn arm die mij meerdere schokken gaf en probeerde daarmee mijn website te bedienen.
+<img src="images/website_test2.jpg" width="375px"
+	
+-	Het was vrijwel onmogelijk om een muis vast te houden
+
+Hoe dit opgelost kan worden: (met indien nodig een afbeelding)
+-	De website toegankelijk maken voor toetsenboorden.
+-	knoppen niet te klein maken
+
+
+#### slechtziende brillen. 
+<img src="images/website_test4.jpg" width="375px"
+Ik deed meerdere tests met brillen die je blind of kleurenblind maken
+
+-	als je kleurenblind bent en een toetsenboord gebruikt om de website te navigeren, kan het nogal moeilijk zijn om de focus states van bepaalde knoppen te zien
+
+Hoe dit opgelost kan worden:
+
+-	een duidelijke licht/donker contrast gebruiken bij verschillende button states	
 
 </details>
 
@@ -194,20 +216,21 @@ samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| Focus states bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 
 Ik wil zelf focus states bespreken, wanneer ik voor een tweede keer op een knop druk blijft hij vastzitten in de focus state totdat ik op iets anders klik.
+Ik twijfel ook of ik genoeg content heb
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- form toevoegen aan mijn tweede pagina
+- video player toevoegen
+- focus states voor alle links en buttons maken
+- quote in mijn artikel stylen
 
 </details>
 
@@ -221,11 +244,22 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+het toevoegen van een form was veel moeilijker dan ik had verwacht en om heel eerlijk te zijn begrijp ik nog steeds niet helemaal hoe het stylen van een radio button werkt.
+Ik kwam er ook niet echt aan toe om een video player toe te voegen.
+De website is volledig responsive waar ik enorm blij mee ben.
+De "Zapp" logo blijft maar moeilijk doen.
+de padding van de h1 verschilt tussen mijn live preview en de website dat op github staat
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/resultaat1.png" width="375px"
+<img src="images/resultaat2.png" width="375px"
+<img src="images/resultaat3.png" width="375px"
+<img src="images/resultaat4.png" width="375px"
+<img src="images/resultaat5.png" width="375px"
+<img src="images/resultaat6.png" width="375px"
+<img src="images/resultaat7.png" width="375px"
+<img src="images/resultaat8.png" width="375px"
 
 </details>
 
@@ -240,8 +274,16 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. de form heb ik gemaakt met behulp van https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 
+2. afbeeldingen: 
+
+	https://jeugdjournaal.nl/artikel/2399561-grote-politie-actie-tegen-drugsbende-zes-mensen-opgepakt.html 
+	https://nl.wikipedia.org/wiki/Orka#/media/Bestand:Killerwhales_jumping.jpg
+	https://www.houstonzoo.org/explore/animals/orangutan/
+	https://i.redd.it/38blr5nte4161.jpg
+	https://www.youtube.com/watch?v=Z46tiqzT_9U
+	https://www.reddit.com/r/Pepsi/comments/fv76ua/the_pepsi_throne_caw_caw/
+
+	Logo's komen uit https://jeugdjournaal.nl/
 </details>
