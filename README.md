@@ -40,11 +40,11 @@ https://jeugdjournaal.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Jeugdjournaal homepage 
-<img src="images/jeugdjournaal_home.jpg" width="375px" alt="de homepage">
+<img src="images/jeugdjournaal_home.png" width="375px" alt="de homepage">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/jeugdjournaal_stelling.jpg" width="375px" alt="de stellingpagina">
+<img src="images/jeugdjournaal_stelling.png" width="375px" alt="de stellingpagina">
  
 </details>
 
@@ -81,10 +81,10 @@ hier de naam van de pagina
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 Op een desktop begint de vormgeving wel een beetje op die van het Jeugdjournaal te lijken
-<img src="images/website_screenshot1.jpg" width="375px"
+<img src="images/website_screenshot1.png" width="375px">
 
 Helaas lukt het mij nog niet echt om de website responsive te maken voor een mobiele one-pager. Het werken met units vind ik over het algemeen enorm lastig en flexbox moet ik ook nog zien uit te vogelen.
-<img src="images/code_screenshot1.jpg" width="375px"
+<img src="images/code_screenshot1.png" width="375px">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -153,7 +153,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### De screenreader
 
-<img src="images/website_test1.jpg" width="375px"
+<img src="images/test1.jpg" width="375px">
 -	buttons zijn niet duidelijk genoeg
 -	de titels van de artikelen worden niet voorgelezen
 -	de foto's en buttons kunnen niet van elkaar worden onderscheiden
@@ -165,7 +165,7 @@ Hoe dit opgelost kan worden: (met indien nodig een afbeelding)
 
 #### De ballon 
 
-<img src="images/website_test3.jpg" width="375px"
+<img src="images/test3.jpg" width="375px">
 -	het is te moeilijk om de muis te bedienen en tegelijkertijd een ballon omhoog te houden
 -	het is lastig om op bepaalde links/knoppen te drukken
 
@@ -177,7 +177,7 @@ Hoe dit opgelost kan worden: (met indien nodig een afbeelding)
 #### Elektrische Stimulator. 
 
 Ik deed een stimulator om mijn arm die mij meerdere schokken gaf en probeerde daarmee mijn website te bedienen.
-<img src="images/website_test2.jpg" width="375px"
+<img src="images/test2.jpg" width="375px">
 	
 -	Het was vrijwel onmogelijk om een muis vast te houden
 
@@ -187,7 +187,7 @@ Hoe dit opgelost kan worden: (met indien nodig een afbeelding)
 
 
 #### slechtziende brillen. 
-<img src="images/website_test4.jpg" width="375px"
+<img src="images/test4.jpg" width="375px">
 Ik deed meerdere tests met brillen die je blind of kleurenblind maken
 
 -	als je kleurenblind bent en een toetsenboord gebruikt om de website te navigeren, kan het nogal moeilijk zijn om de focus states van bepaalde knoppen te zien
@@ -252,14 +252,14 @@ de padding van de h1 verschilt tussen mijn live preview en de website dat op git
 
 ### Screenshot(s)
 
-<img src="images/resultaat1.png" width="375px"
-<img src="images/resultaat2.png" width="375px"
-<img src="images/resultaat3.png" width="375px"
-<img src="images/resultaat4.png" width="375px"
-<img src="images/resultaat5.png" width="375px"
-<img src="images/resultaat6.png" width="375px"
-<img src="images/resultaat7.png" width="375px"
-<img src="images/resultaat8.png" width="375px"
+<img src="images/resultaat1.png" width="375px">
+<img src="images/resultaat2.png" width="375px">
+<img src="images/resultaat3.png" width="375px">
+<img src="images/resultaat4.png" width="375px">
+<img src="images/resultaat5.png" width="375px">
+<img src="images/resultaat6.png" width="375px">
+<img src="images/resultaat7.png" width="375px">
+<img src="images/resultaat8.png" width="375px">
 
 </details>
 
